@@ -246,15 +246,12 @@ a:hover {
 #centerdiv h1 {
     position: relative;
     z-index: 2;
-    /*font-family: 'Lobster', cursive;*/
-    /*font-family: 'Amatic SC', cursive;*/
     font-family: 'Droid Sans', sans-serif;
-    padding-top:15%;
+    padding-top: 5%;
 } 
 @media screen and (min-width: 720px) {
    #centerdiv h1 {
-    /*padding: 200px;*/
-    padding-top:15%;
+    padding-top: 5%;
         }
 }
 
@@ -286,7 +283,7 @@ a:hover {
 }
 #myPhoto
 {
-    background: url('../Images/black-1072366_1920.jpg') no-repeat center center fixed; 
+    background: url('../Images/blue-1072366_1920.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
