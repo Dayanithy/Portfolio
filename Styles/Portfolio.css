@@ -283,11 +283,29 @@ a:hover {
 }
 #myPhoto
 {
-    background: url('../Images/blue-1072366_1920.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
+    background-color: #34495e;
+    /*background: url('../Images/texture-1075992_1280.jpg') no-repeat center center fixed; */
+    /*background-color: #6A6F82;*/
+    /*background-image:
+    radial-gradient(
+      #f0f0f2,      
+      #6A6F82
+    );*/
+    /*-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;   
+    background-size: cover;   */
+/*    
+
+background: #606c88;
+background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b);
+background: linear-gradient(to left, #606c88 , #3f4c6b);*/
+        
+
+/*background: #2980b9;
+background: -webkit-linear-gradient(to left, #2980b9 , #2c3e50);
+background: linear-gradient(to left, #2980b9 , #2c3e50);*/
+        
 }
 
 #WhatIDoImage
@@ -321,8 +339,16 @@ a:hover {
     text-shadow: #efefef;
     cursor: hand;
     padding: 5px;
-    border: 1px solid #03A9F4;
+    border: 1px solid white;
     border-radius: 5px;
-    box-shadow: 2px 2px 1px  #03A9F4;
+    box-shadow: 2px 2px 1px  white;
     /*background-color: #4DB6AC;*/
  }
+.fa:hover
+{
+    color: #FF5722;
+}
+.fa 
+{
+    color: white;
+}

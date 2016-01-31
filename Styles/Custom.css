@@ -1,0 +1,71 @@
+header {
+    width: 100%;
+    height: 90%;
+  display: block;
+  position: relative;
+}
+
+header::after {
+    content: "";
+    background-image: url('../Images/IMG_2296.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.whiteText
+{
+    color: #fff;
+}
+#divHeader { 
+   position: absolute;
+   top: 20%; 
+   left: 0; 
+   width: 100vw;
+   /*width: 100%; */
+}
+.nameFontStyle
+{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 8em;
+    padding: 5px;
+}
+#skillbox1, #skillbox2, #skillbox3
+{
+    border: 5px solid #fff;
+    min-height: 30%;
+    padding: 10px;
+    box-shadow: 0px 10px 5px #CFD8DC;
+}
+#skillBox1:hover
+{
+    border-color: #3ab0e2;
+    box-shadow: 0px 10px 5px  #3ab0e2;
+}
+#skillBox2:hover
+{
+    border-color: #34d293;
+    box-shadow: 0px 10px 5px  #34d293;
+}
+#skillBox3:hover
+{
+    border-color: #f7d861;
+    box-shadow: 0px 10px 5px  #f7d861;
+}
+@media only screen and (max-width: 720px) and (orientation: landscape)
+{
+     .nameFontStyle {
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width: 720px) and (orientation: portrait){
+   .nameFontStyle {
+        font-size: 5em;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+}
