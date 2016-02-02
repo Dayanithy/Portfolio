@@ -1,8 +1,11 @@
+body > .container {
+    padding-top: 60px;
+}
 header {
     width: 100%;
     height: 90%;
-  display: block;
-  position: relative;
+    display: block;
+    position: relative;
 }
 
 header::after {
@@ -68,4 +71,17 @@ header::after {
         padding-top: 0;
         padding-bottom: 15px;
     }
+}
+.nav-pills
+{
+    margin-bottom: 10px;
+}
+.nav-pills>li>a, .nav-pills>li>a:focus, .nav-pills>li>a:hover
+{
+    font-size: 24px;   
+    background-color: #efefef; 
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover
+{
+    font-size: 24px;    
 }
