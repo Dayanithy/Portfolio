@@ -1,3 +1,6 @@
+body{
+    font-family: 'roboto', 'sans-serif';
+}
 body > .container {
     padding-top: 60px;
 }
@@ -20,6 +23,16 @@ header::after {
     position: absolute;
     z-index: -1;
 }
+#mainNav
+{
+    box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08)
+}
+.navlinkFont
+{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 12pt;
+    font-weight: bold;
+}
 .whiteText
 {
     color: #fff;
@@ -31,6 +44,18 @@ header::after {
    /*width: 100vw;*/
    /*width: 100%; */
 }
+.siteLogoFont
+{
+    font-family: 'Pacifico', cursive; 
+    font-size: 2em;
+}
+.navbar-default .navbar-brand
+{
+    color: #777;
+}
+.navbar-default .navbar-brand:hover{
+    color: orangered;
+}
 .nameFontStyle
 {
     font-family: 'Roboto', sans-serif; 
@@ -39,25 +64,40 @@ header::after {
 }
 #skillbox1, #skillbox2, #skillbox3
 {
-    border: 5px solid #fff;
-    min-height: 30%;
+    /*border: 2px solid #fff;*/
+    min-height: 27%;
     padding: 10px;
     box-shadow: 0px 10px 5px #CFD8DC;
+    transform: scale(1.5,1.5);
+}
+#skillbox1
+{
+    border: 2px solid #3ab0e2;    
+} #skillbox2{
+    border: 2px solid #34d293;
+    
+} #skillbox3{
+    border: 2px solid #f7d861;
+    
 }
 #skillBox1:hover
 {
-    border-color: #3ab0e2;
     box-shadow: 0px 10px 5px  #3ab0e2;
+    
 }
 #skillBox2:hover
 {
-    border-color: #34d293;
     box-shadow: 0px 10px 5px  #34d293;
 }
 #skillBox3:hover
 {
-    border-color: #f7d861;
     box-shadow: 0px 10px 5px  #f7d861;
+}
+#lblPhotography
+{
+    font-size: 32px;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 @media only screen and (max-width: 720px) and (orientation: landscape)
 {
@@ -72,6 +112,14 @@ header::after {
         padding-bottom: 15px;
     }
 }
+.navbar-default .navbar-nav>li>a
+{
+    color: #777;
+}
+.navbar-default .navbar-nav>li>a:hover
+{
+    color: orangered;
+}
 .nav-pills
 {
     margin-bottom: 10px;
@@ -85,3 +133,111 @@ header::after {
 {
     font-size: 24px;    
 }
+/*Apps list animation - Start*/
+@keyframes fadeInFromLeft {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(-150px);
+        -ms-transform: translateX(-150px);
+        -o-transform: translateX(-150px);
+        -webkit-transform: translateX(-150px);
+        transform: translateX(-150px);
+    }
+ 
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+ 
+.fadeInFromLeft {
+    -webkit-animation-name: fadeInFromLeft;
+    -moz-animation-name: fadeInFromLeft;
+    -o-animation-name: fadeInFromLeft;
+    animation-name: fadeInFromLeft;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInFromRight {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+ 
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.fadeInFromRight
+{
+    -webkit-animation-name: fadeInFromRight;
+    -moz-animation-name: fadeInFromRight;
+    -o-animation-name: fadeInFromRight;
+    animation-name: fadeInFromRight;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(150px);
+        -ms-transform: translateY(150px);
+        -o-transform: translateY(150px);
+        -webkit-transform: translateY(150px);
+        transform: translateY(150px);
+    }
+ 
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+.fadeInFromBottom
+{
+    -webkit-animation-name: fadeInFromBottom;
+    -moz-animation-name: fadeInFromBottom;
+    -o-animation-name: fadeInFromBottom;
+    animation-name: fadeInFromBottom;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+/*Apps list animation - End*/
