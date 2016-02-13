@@ -6,14 +6,14 @@ body > .container {
 }
 header {
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: block;
     position: relative;
 }
 
 header::after {
     content: "";
-    background-image: url('../Images/IMG_2296.jpg'); 
+    background-image: url('../Images/Background.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
@@ -44,6 +44,7 @@ header::after {
    /*width: 100vw;*/
    /*width: 100%; */
 }
+
 .siteLogoFont
 {
     font-family: 'Pacifico', cursive; 
@@ -99,10 +100,34 @@ header::after {
     text-transform: uppercase;
     text-decoration: underline;
 }
+#aboutMe
+{
+    padding-top: 10%; 
+     height: 100%;
+}
+#fun
+{
+    height: 100%;
+    padding-top: 6%;
+}
+#contact
+{
+    height: 95%;
+    padding-top: 8%;
+}
 @media only screen and (max-width: 720px) and (orientation: landscape)
 {
      .nameFontStyle {
         font-size: 3em;
+    }
+    #aboutMe, #fun, #contact
+    {
+        height: inherit;
+        padding-top: 0;
+    }
+    .deviceTopPadding
+    {
+        padding-top: 3%;
     }
 }
 @media only screen and (max-width: 720px) and (orientation: portrait){
@@ -110,6 +135,15 @@ header::after {
         font-size: 5em;
         padding-top: 0;
         padding-bottom: 15px;
+    }
+    #aboutMe, #fun, #contact
+    {
+        height: inherit;
+        padding-top: 0;
+    }
+     .deviceTopPadding
+    {
+        padding-top: 5%;
     }
 }
 .navbar-default .navbar-nav>li>a
